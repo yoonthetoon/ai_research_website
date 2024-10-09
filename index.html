@@ -3,29 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title>Your Name</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             color: #333;
-        }
-
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            text-align: center;
         }
 
         header {
-            text-align: center;
-            padding: 50px 20px;
             background-color: #333;
             color: white;
+            padding: 50px 20px;
         }
 
         header h1 {
@@ -33,62 +24,59 @@
             font-size: 3em;
         }
 
-        .intro {
-            text-align: center;
-            margin: 40px 0;
+        .content {
+            margin: 40px auto;
+            max-width: 800px;
         }
 
-        .intro img {
-            max-width: 150px;
+        .section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .contact {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             margin-bottom: 20px;
         }
 
-        .section {
-            margin-bottom: 40px;
+        a {
+            color: #fff;
+            text-decoration: none;
         }
 
-        h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            line-height: 1.6;
-        }
-
-        .education, .contact {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .education-item, .contact-item {
-            flex: 1;
-            min-width: 300px;
-            margin: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-
-            .education-item, .contact-item {
-                min-width: 100%;
-                text-align: center;
-            }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -96,46 +84,29 @@
 
     <header>
         <h1>Your Name</h1>
-        <p>Introduction text goes here, briefly describe yourself.</p>
+        <p>Your tagline or brief description here</p>
     </header>
 
-    <div class="container">
-        <section class="intro">
-            <img src="your-image.jpg" alt="Your Photo">
-            <p>Hello! I'm [Your Name], a [Your Profession] with a passion for [Your Interests].</p>
+    <div class="content">
+        <section class="section">
+            <h2>Introduction</h2>
+            <p>Brief introduction about yourself. You can add some details about your background, expertise, and interests.</p>
         </section>
 
-        <section class="education section">
+        <section class="section">
             <h2>Education</h2>
-            <div class="education-item">
-                <h3>Degree 1</h3>
-                <p>School Name, Year</p>
-            </div>
-            <div class="education-item">
-                <h3>Degree 2</h3>
-                <p>School Name, Year</p>
-            </div>
+            <p>List your educational background here. You can include degrees, certifications, or any relevant learning experiences.</p>
         </section>
 
-        <section class="contact section">
+        <section class="section">
             <h2>Contact Information</h2>
-            <div class="contact-item">
-                <h3>Email</h3>
-                <p>youremail@example.com</p>
-            </div>
-            <div class="contact-item">
-                <h3>Phone</h3>
-                <p>(123) 456-7890</p>
-            </div>
-            <div class="contact-item">
-                <h3>LinkedIn</h3>
-                <p><a href="https://linkedin.com/in/yourprofile">Your LinkedIn</a></p>
-            </div>
+            <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Your Name - All Rights Reserved</p>
+        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
     </footer>
 
 </body>
